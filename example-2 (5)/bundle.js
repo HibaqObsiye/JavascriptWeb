@@ -18,6 +18,12 @@
           this.mainContainerEl.append(newParagraph2);
           return newParagraph2;
         }
+        clearParagraph() {
+          let paragraphs = document.querySelectorAll("p");
+          paragraphs.forEach((element) => {
+            element.remove();
+          });
+        }
       };
       module.exports = View2;
     }
