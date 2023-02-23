@@ -16,6 +16,7 @@ describe('Page view', () => {
 });
 
 describe('addParagraph', () =>{
+  document.body.innerHTML = fs.readFileSync('./index.html')
   const view = new View()
   view.addParagraph('hello everyone')
   expect(document.querySelectorAll('p').length).toBe(3)
