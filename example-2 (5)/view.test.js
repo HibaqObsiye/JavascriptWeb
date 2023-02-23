@@ -21,3 +21,11 @@ describe('addParagraph', () =>{
   view.addParagraph('hello everyone')
   expect(document.querySelectorAll('p').length).toBe(3)
 })
+
+describe('clearParagraph', ()=>{
+  document.body.innerHTML = fs.readFileSync('./index.html')
+  const view = new View()
+  view.clearParagraph()
+
+  expect(document.querySelectorAll('p').length).toBe(0)
+})
