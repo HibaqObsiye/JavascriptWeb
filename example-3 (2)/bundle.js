@@ -15,9 +15,10 @@
         }
         displayMessage() {
           let section = document.querySelector("#main-container");
-          let createID = section.createElement("div");
-          createID.id = "message";
-          createID.textContent = "This message displayed by Javascript";
+          let newDiv = document.createElement("div");
+          newDiv.id = "message";
+          newDiv.textContent = "This message is displayed by Javascript";
+          section.appendChild(newDiv);
         }
       };
       module.exports = MessageView2;
@@ -27,4 +28,5 @@
   // index.js
   var MessageView = require_messageView();
   var view = new MessageView();
+  view.displayMessage();
 })();
