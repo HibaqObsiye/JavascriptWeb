@@ -36,5 +36,4 @@
   // index.js
   var MessageView = require_messageView();
   var view = new MessageView();
-  view.displayMessage();
 })();

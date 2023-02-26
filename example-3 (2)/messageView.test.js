@@ -23,8 +23,8 @@ describe('MessageView', () => {
 
     const buttonEl = document.querySelector('#show-message-button');
     buttonEl.click();
-    const hideButtonEl = document.querySelector('#show-message-button')
-    buttonEl.click();
+    const hideButtonEl = document.querySelector('#hide-message-button')
+    hideButtonEl.click();
 
     expect(document.querySelector('#message')).toBeNull();
   });
