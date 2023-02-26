@@ -13,13 +13,10 @@ class MessageView {
       newDiv.id = "message"
       newDiv.textContent = "This message is displayed by Javascript"
       section.appendChild(newDiv)
-    // let createID = section.createElement("div")
-    // document.body.append(createID)
-    // createID.id = "message"
-    // createID.textContent = "This message displayed by Javascript"
-    // document.body.append(createID)
+  }
 
-    // console.log('Thanks for clicking me!');
+  removeMessage(){
+    
   }
 }
 

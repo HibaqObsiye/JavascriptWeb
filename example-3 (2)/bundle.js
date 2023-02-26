@@ -20,6 +20,8 @@
           newDiv.textContent = "This message is displayed by Javascript";
           section.appendChild(newDiv);
         }
+        removeMessage() {
+        }
       };
       module.exports = MessageView2;
     }
