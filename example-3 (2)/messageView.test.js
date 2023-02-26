@@ -16,4 +16,15 @@ describe('MessageView', () => {
 
     expect(document.querySelector('#message')).not.toBeNull();
   });
+  it("deletes the message when button is clicked", ()=>{
+    document.body.innerHTML = fs.readFileSync('./index.html');
+
+    const view = new MessageView();
+
+    const buttonEl = document.querySelector('#show-message-button');
+    buttonEl.click();
+    buttonEl.click();
+    expect(document.querySelector('#message')).toBeNull();
+  });
+  
 });
